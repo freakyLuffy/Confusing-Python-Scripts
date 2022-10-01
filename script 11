@@ -1,0 +1,3 @@
+#B's script
+my_list=list(filter(lambda x:x.get(2,1)+x.get(1,1)>6,[ele for k,ele in enumerate([{i:i*j}for i in range(10) for j in range(10)])]))
+print(my_list)
