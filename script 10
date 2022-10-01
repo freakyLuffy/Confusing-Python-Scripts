@@ -1,0 +1,14 @@
+#B's game
+import string
+import random
+arr = list(string.ascii_uppercase)
+t=150
+p=random.sample(arr, 3)
+for i in range(t):
+    if i<=148:
+        print("| | |")
+    else:
+        k=0
+        for i in range(3):
+            print(p[k],end=' ')
+            k+=1
