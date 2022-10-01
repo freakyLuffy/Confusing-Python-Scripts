@@ -1,0 +1,2 @@
+n = [1,2,3,4]
+print(sum([max(n)-x for x in range(len(n))]))
