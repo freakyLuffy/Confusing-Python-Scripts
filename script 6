@@ -1,0 +1,6 @@
+from functools import cmp_to_key
+def cmp(a,b):
+    return a+b<b+a
+my_list=["123","13","323","4343"]
+my_list.sort(key=cmp_to_key(cmp))
+print(my_list)
