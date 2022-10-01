@@ -1,0 +1,4 @@
+from functools import reduce
+my_list=[1,2,3,4,5]
+map_reduce_filter=list(filter(lambda x:x%2==0,list(map(lambda x:x*2,[reduce(lambda x,y:x+y,my_list)]))))
+print(map_reduce_filter)
