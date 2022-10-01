@@ -1,0 +1,14 @@
+def inf_sequence():
+    num = 0
+    while True:
+        yield num
+        num += 1
+    return num
+obj=inf_sequence()
+def func(a):
+    return next(obj)*2*a
+    
+    
+list1=[1,2,3,4]
+list2=[2,3,4,5]
+print(list(map(func,list1+list2)))
