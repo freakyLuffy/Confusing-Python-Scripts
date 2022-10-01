@@ -1,0 +1,13 @@
+input_str = "Party Party Party? Party"
+sep = input_str.split(" ")
+result = ""
+for word in sep:
+  result += word[::-1].lower() + " "
+result_2 = ""
+sep_2 = result.split(" ")
+for word in sep_2:
+  try:
+    result_2 += word[0].upper() + word[1:] + " "
+  except:
+    pass
+print(result_2)
